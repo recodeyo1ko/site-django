@@ -8,3 +8,8 @@ services:
     tty: true
     volumes:
       - ${SRC_PATH}:/root/workspace
+    networks:
+      - common-network
+networks:
+  common-network:
+    external: true
